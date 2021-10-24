@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'SF UI';
+    src: url('./fonts/SFUIDisplay-Regular.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'SF UI Black';
+    src: url('./fonts/SFUIDisplay-Black.otf') format('opentype'); 
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryColor: #FFC200;
+    --textcolor: #241424;
+    --darkButton: #372930;
+}
+
+body {
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'SF UI';
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin: 16px;
+    padding: 16px 24px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);;
+}
+
+#logo {
+    display: flex;
+    flex: 1;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#logo span{
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--textcolor);
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li {
+    margin:0px 30px ;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgba(36, 20, 36, 0.4);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#start {
+    background-color: var(--primaryColor);
+    border: none;
+    font-family: 'SF UI';
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 18px 25px;
+    border-radius: 30px;
+    margin-left: 16px;
+}
+
+main{
+    width: 35vw;
+    margin-left: 60px;
+    margin-top: 120px;
+}
+main h1{
+    font-family: 'SF UI Black';
+    font-size: 7.1rem;
+    color: var(--textcolor);
+    margin: 8px 0px;
+}
+
+main p{
+    color: rgba(0, 0, 0, 0.34);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'SF UI';
+}
+
+#startDark{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    background-color: var(--darkButton);
+    margin-top: 60px;
+    border-radius: 50px;
+    padding: 16px;
+}
+
+#startDark span{
+    border: 10px solid var(--primaryColor);
+    width: 20px;
+    height: 20px;
+    background-color:var(--darkButton);
+    border-radius: 50%;
+}
+
+#startDark button{
+    background-color: var(--darkButton);
+    border-style: none;
+    color: white;
+    font-family: 'SF UI';
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-right: 25px;
+}
